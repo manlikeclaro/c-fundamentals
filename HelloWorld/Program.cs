@@ -15,15 +15,28 @@
             // Console.WriteLine(myNumbers.Min());  // returns the smallest value
             // Console.WriteLine(myNumbers.Sum());  // returns the sum of elements
 
-            static void MyMethod(string child1, string child2 , string child3 = "darryl")
+            // static void MyMethod(string child1, string child2 , string child3 = "darryl")
+            // {
+            //     Console.WriteLine("The youngest child is: " + child3);
+            //     Console.WriteLine(child3);
+            // }
+
+            static int AddNums(int x, int y)
             {
-                Console.WriteLine("The youngest child is: " + child3);
-                Console.WriteLine(child3);
+                return x + y;
+            }
+            
+            static double AddDoubleNums(double x, double y)
+            {
+                return x + y;
             }
 
             static void Main(string[] args)
             {
-                MyMethod("John", "Liam");
+                int addIntResult = AddNums(3, 5);
+                Console.WriteLine($"add int result: {addIntResult}");
+                double addDoubleResult = AddDoubleNums(3.0, 5.0);
+                Console.WriteLine($"add int result: {addDoubleResult}");
             }
         }
     }
